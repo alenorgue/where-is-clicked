@@ -21,3 +21,11 @@ function drawCross(x, y) {
   line2.style.top = y + "px";
   document.body.appendChild(line2);
 }
+
+let map = document.querySelector(".map");
+
+map.addEventListener("click", function (event) {
+  drawCross(event.x, event.y);
+  console.log(event.x, event.y);
+});
+      
